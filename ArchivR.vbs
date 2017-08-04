@@ -34,7 +34,7 @@ For i = 0 to objArgs.count - 1
     ' end if
 
     'get date time stamp
-    DtTm = CStr(year(Date)) +  Right(("00" + CStr(Month(Date))),2) + CStr(Day(Date)) + right("00" +CStr(Hour(time)),2) + Right("00" + CStr(Minute(time)),2)
+    DtTm = CStr(year(Date)) +  Right(("00" + CStr(Month(Date))),2) + right("00" +CStr(Day(Date)),2) + right("00" +CStr(Hour(time)),2) + Right("00" + CStr(Minute(time)),2)
 
     'create Archive folder if needed
     if NOT objFso.FolderExists(ParentFolder & "\Archive\") then
